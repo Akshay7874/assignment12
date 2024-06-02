@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes q1 {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(900px);
+            }
+        }
+        @keyframes q1 {
+           
+            100% {
+                transform: translateX(-800px);
+            }
+        }
+        #box {
+            display: flex;
+            height: 100vh;
+            background-color: aquamarine;
+        }
+        div#box>div:nth-of-type(1)>img{
+            margin-left: 500px;
+            height: 400px;
+            width: 500px;
+            animation: q1 5s infinite;
+        }
+        div#box>div:nth-of-type(2)>img{
+            height: 400px;
+            width: 500px;
+            animation: q1 9s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div><img src="https://i.pinimg.com/originals/03/a4/d5/03a4d55748dfefa852df76b085708c0a.png" alt=""></div>
+        <div><img src="./tom.png" alt=""></div>
+    </div>
+</body>
+</html>

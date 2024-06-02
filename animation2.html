@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes q1 {
+           
+            100% {
+                transform: translateX(500px);
+            }
+        }
+        #box > div {
+            width: 500px;
+            height: 80px;
+            display: flex;
+            margin-bottom: 10px;
+        }
+        #box > div:nth-of-type(1) {
+            background-color: blue;
+        }
+        #box > div:nth-of-type(1) {
+            background-color: rgb(0, 64, 255);
+            animation: q1 4s infinite;
+        }
+        #box > div:nth-of-type(2) {
+            background-color: rgb(0, 64, 255);
+            animation: q1 7s infinite;
+        }
+        #box > div:nth-of-type(3) {
+            background-color: rgb(0, 64, 255);
+            animation: q1 9s infinite;
+        }
+        #box > div:nth-of-type(4) {
+            background-color: rgb(0, 64, 255);
+            animation: q1 6s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
